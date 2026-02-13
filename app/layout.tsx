@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'SignaFlow Pro - Centralized Email Signature Management',
-  description: 'Value Proposition: Enables businesses to easily create, deploy, and centrally manage professional, on-brand email signatures across all employee devices and email clients, ensuring consistent brand identity, legal compliance, and dynamic marketing messaging with minimal IT effort.
+  description: `Value Proposition: Enables businesses to easily create, deploy, and centrally manage professional, on-brand email signatures across all employee devices and email clients, ensuring consistent brand identity, legal compliance, and dynamic marketing messaging with minimal IT effort.
 
 Target Customer: Small to medium businesses (SMBs), marketing departments, HR departments, and IT administrators looking for a simple, robust solution for email signature governance.
 
@@ -19,7 +19,7 @@ Promotion Type: automatic',
 };
 
 export const viewport = {
-  width: 'device-width',
+  width: 'device-width`,
   initialScale: 1,
 };
 
