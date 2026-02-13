@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-interface Signatures/createItem {
+interface SignaturesCreateItem
   id: string;
   title?: string;
   status?: string;
@@ -10,8 +10,8 @@ interface Signatures/createItem {
   [key: string]: any;
 }
 
-export default function Signatures/createPage() {
-  const [items, setItems] = useState<Signatures/createItem[]>([]);
+export default function SignaturesCreatePage
+  const [items, setItems] = useState<SignaturesCreateItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [showCreate, setShowCreate] = useState(false);
   const [newTitle, setNewTitle] = useState('');
@@ -39,7 +39,7 @@ export default function Signatures/createPage() {
   };
 
   const handleDelete = async (id: string) => {
-    await fetch(`/api/signatures/create/${id}`, { method: 'DELETE' });
+    await fetch(`/ApiSignaturesCreate/${id}`, { method: 'DELETE' });
     setItems(prev => prev.filter(i => i.id !== id));
   };
 
