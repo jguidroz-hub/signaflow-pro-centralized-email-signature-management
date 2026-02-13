@@ -54,7 +54,7 @@ export const companies = pgTable('companies', {
   userId: text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   name: text('name').notNull(),
   domain: text('domain').unique(),
-  subscriptionTier: text('subscription_tier').default(basic),
+  subscriptionTier: text('subscription_tier').default('basic'),
   createdAt: timestamp('created_at').notNull(),
   updatedAt: timestamp('updated_at').notNull(),
 });
