@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-interface SignaturesCreateItem
+interface SignaturesCreateItem {
   id: string;
   title?: string;
   status?: string;
@@ -10,7 +10,7 @@ interface SignaturesCreateItem
   [key: string]: any;
 }
 
-export default function SignaturesCreatePage
+export default function SignaturesCreatePage() {
   const [items, setItems] = useState<SignaturesCreateItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [showCreate, setShowCreate] = useState(false);
